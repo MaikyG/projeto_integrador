@@ -1,7 +1,7 @@
-<footer>
+<footer class="d-flex justify-content-center" >
         <h2>OneUp</h2>
 
-        <div class="alinhamento">
+        <div id="footer-container" class="alinhamento">
         <h3>Cursos</h3>
         <p><a href="cursos.php">Cursos Técnicos</a></p>
         <p><a href="">Inscrições Abertas</a></p>

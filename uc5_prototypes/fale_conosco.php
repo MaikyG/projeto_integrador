@@ -40,61 +40,67 @@ require "cabecalho.php"
 <table class="w3-table">
 <tr>
                 <div>
-                   <td class="text-primary"> <label for="nome">Nome:</label> </td>
+                   <td class="text-dark"> <label for="nome">Nome:</label> </td>
                    <td > <input class="border border-primary" placeholder="nome" type="text" name="" id="nome" required> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td class="text-primary">  <label for="email">E-mail:</label> </td>
+                <td class="text-dark">  <label for="email">E-mail:</label> </td>
                 <td>  <input class="border border-primary" placeholder="email" type="email" name="" id="email" required> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td class="text-primary">   <label for="data">Data de nascimento:</label> </td>
+                <td class="text-dark">   <label for="data">Data de nascimento:</label> </td>
                 <td>   <input class="border border-primary" type="date" name="data" id="data" required> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td class="text-primary">   <label for="telefone">Telefone:</label> </td>
+                <td class="text-dark">   <label for="telefone">Telefone:</label> </td>
                 <td>   <input class="border border-primary" placeholder="telefone" type="tel" name="telefone" id="telefone"> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td class="text-primary">   <label for="idade">Idade:</label> </td>
+                <td class="text-dark">   <label for="idade">Idade:</label> </td>
                 <td>  <input class="border border-primary" placeholder="idade" type="number" name="idade" id="idade" min="18" max="100" required> </td>
                 </div>
                 </tr>
                 </table>
 
                 <div class="teste">
-                   <p >Sexo:</p> 
-                   <input class=" mx-2" value="Masculino" type="radio" name="sexo" id="masculimo"> 
-                   <label class="w-25 border border-primary" for="masculimo">Masculimo</label> 
+                   <p class="text-dark">Sexo:</p> 
+                   <input class=" mx-2 border border-primary" value="Masculino" type="radio" name="sexo" id="masculimo"> 
+                   <label class="w-25 border border-primary rounded " for="masculimo">Masculimo</label> 
 
-                   <input value="Feminino" type="radio" name="sexo" id="feminino"> 
-                   <label class="border border-primary" for="feminino">Feminino</label> 
+                   <input class="border border-primary" value="Feminino" type="radio" name="sexo" id="feminino"> 
+                   <label class="border border-primary rounded " for="feminino">Feminino</label> 
                 </div>
                 
 
 
                 <div class="teste">
-                   <p >Interesses</p> </td>
-                   <input class=" mx-1" value="Desing" type="checkbox" name="interesses" id="desing"> 
-                   <label class="w-25 borda" for="desing">Desing</label> 
+                   <p class="text-dark">Interesses</p> </td>
+                    <div class="custom-control custom-checkbox">
+                   <input class=" mx-1 border border-primary custom-control-input " value="Desing" type="checkbox" name="interesses" id="desing customCheck1"> 
+                   <label class=" w-25 border border-primary custom-control-label rounded " for="desing customCheck1">Desing</label> 
+                    </div>
 
-                   <input class=" mx-1" value="Robotica" type="checkbox" name="interesses" id="robotica"> 
-                   <label class="w-25 borda" for="robotica">Robotica</label> 
+                    <div class="custom-control custom-checkbox">
+                   <input class=" mx-1 border border-primary custom-control-input" value="Robotica" type="checkbox" name="interesses" id="robotica customCheck1"> 
+                   <label class=" w-25 border border-primary custom-control-label rounded" for="robotica customCheck1">Robotica</label> 
+                   </div>
 
-                   <input class=" mx-1" value="Programação" type="checkbox" name="interesses" id="programacao"> 
-                   <label class="w-25 borda" for="programacao">Programação</label> 
+                   <div class="custom-control custom-checkbox ">
+                   <input class=" mx-1 border border-primary custom-control-input" value="Programação" type="checkbox" name="interesses" id="programacao customCheck1"> 
+                   <label class=" w-25 border border-primary custom-control-label rounded" for="programacao customCheck1">Programação</label> 
+                   </div>
                 </div>
                 
 
@@ -102,10 +108,10 @@ require "cabecalho.php"
                 <table>
                 <tr>
                 <div class="content">
-                <td>   <label for="cep">CEP:</label> </td>
-                <td class="borda">   <input type="text" id="cep" name="cep" maxlength="9" required> </td>
+                <td class="text-dark">   <label for="cep">CEP:</label> </td>
+                <td class="">   <input class="border border-primary rounded" type="text" id="cep" name="cep" maxlength="9" required> </td>
 </table>
-                   <button id="localizar-cep">Localizar</button> 
+                   <button type="button" class="btn btn-primary btn-sm" id="localizar-cep">Localizar</button> 
                     <b id="status"></b>
                     <table>
                 </div>
@@ -113,29 +119,29 @@ require "cabecalho.php"
 
                 <tr>
                 <div class="content ">
-                <td>   <label for="endereco">Endereço:</label> </td>
-                <td class="borda">   <input type="text" id="endereco" name="endereco" size="30"> </td>
+                <td class="text-dark">   <label for="endereco">Endereço:</label> </td>
+                <td class="">   <input class="border border-primary rounded" type="text" id="endereco" name="endereco" size="30"> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td>   <label for="bairro">Bairro:</label> </td>
-                <td class="borda">   <input type="text" id="bairro" name="bairro"> </td>
+                <td class="text-dark">   <label for="bairro">Bairro:</label> </td>
+                <td class="">   <input class="border border-primary rounded" type="text" id="bairro" name="bairro"> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td>   <label for="cidade">Cidade:</label> </td>
-                <td class="borda">   <input type="text" id="cidade" name="cidade"> </td>
+                <td class="text-dark">   <label for="cidade">Cidade:</label> </td>
+                <td class="">   <input class="border border-primary rounded" type="text" id="cidade" name="cidade"> </td>
                 </div>
                 </tr>
 
                 <tr>
                 <div class="content">
-                <td>   <label for="estado">Estado:</label> </td>
-                <td class="borda">   <input type="text" id="estado" name="estado"> </td>
+                <td class="text-dark">   <label for="estado">Estado:</label> </td>
+                <td class="">   <input class="border border-primary rounded" type="text" id="estado" name="estado"> </td>
                 </div>
                 </tr>
                 </table>
@@ -143,8 +149,8 @@ require "cabecalho.php"
 
                 
                 <div class="content">
-                   <label for="assunto">Assunto:</label> 
-                    <select class="borda" name="" id=""> 
+                   <label class="text-dark" for="assunto">Assunto:</label> 
+                    <select class="border border-primary rounded" name="" id=""> 
                         <option></option> 
                        <option>Duvida</option> 
                        <option>Elogio</option> 
@@ -156,16 +162,16 @@ require "cabecalho.php"
                 
                 
                 <div class="content">
-                   <label for="mensagem">Mensagem:  
-                   <span id="maximo"> (restam <b id="caracteres">100</b> caracteres)</span>
+                   <label class="text-dark" for="mensagem">Mensagem:  
+                   <span id="maximo"> (restam <b class="text-dark" id="caracteres">100</b> caracteres)</span>
                     </label> <br>
-                    <textarea  maxlength="100" placeholder="mensagem" name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+                    <textarea class="border border-primary" maxlength="100" placeholder="mensagem" name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
                 </div>
                 
 
 
                 
-                <td> <button type="submit">Enviar dados</button> </td>
+                <td> <button type="submit button" class="btn btn-primary btn-sm">Enviar dados</button> </td>
                 <p id="my-form-status"></p>
               
                 

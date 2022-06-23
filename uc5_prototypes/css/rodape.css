@@ -7,3 +7,23 @@
 footer{
  align-items: center;
 }
+#footer-container {
+    width: 100%;
+}
+@media (min-width: 1040px) {
+    h1{
+        font-size: 65px;
+    }
+    .content{
+        width: 470px;
+        min-height: 500px;    
+        margin: 0px auto;
+        position: relative;   
+    }
+    input[type="submit"]{
+        font-size: 30px;
+    }
+    label{
+        font-size: 25px;;
+    }
+  }
